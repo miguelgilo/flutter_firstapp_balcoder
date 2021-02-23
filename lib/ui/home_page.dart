@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
               count.toString(),
               style: TextStyle(color: Colors.brown, fontSize: 28.0),
             )),
-            DashboardWidget(count: __userList.length),
+            DashboardWidget(count: __userList.length, title: "USUARIOS"),
             GestureDetector(
               onTap: () {
                 print("ONTAP");
@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                       return UserFormPage(
                         userList: __userList,
                         title: 'este es el titulo',
-                        color: Colors.red,
+                        color: Colors.white,
                       );
                     }));
                     setState(() {});

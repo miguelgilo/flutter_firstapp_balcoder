@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class DashboardWidget extends StatefulWidget {
-  DashboardWidget({this.count});
+  DashboardWidget({this.count, this.title});
   int count;
+  String title;
 
   @override
   _DashboardWidgetState createState() => _DashboardWidgetState();
@@ -24,7 +25,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
           Text(widget.count.toString(),
               style: TextStyle(color: Colors.white, fontSize: 32)),
           Spacer(),
-          Text("Usuarios", style: TextStyle(color: Colors.white, fontSize: 24)),
+          Text(widget.title,
+              style: TextStyle(color: Colors.white, fontSize: 24)),
           Spacer(),
         ],
       ),
